@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>POST page</title>
+  </head>
+
+  <body>
+    <h4>New Group (POST /api/groups/)</h4>
+    <form action="/api/groups/" method="post" id="newGroup">
+      <input type="text" placeholder="group" id="board1" name="group" required="" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h4>New Board (POST /api/boards/)</h4>
+    <form action="/api/boards/" method="post" id="newBoard">
+      <input type="text" placeholder="group id" id="group" name="group" required="" /><br />
+      <input type="text" placeholder="board" id="board2" name="board" required="" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h4>New Thread (POST /api/threads/)</h4>
+    <form action="/api/threads/" method="post" id="newThread">
+      <input type="text" placeholder="board id" id="board3" name="board" required="" /><br />
+      <input type="text" placeholder="Thread title" name="title" required="" /><br />
+      <textarea type="text" placeholder="Thread text" name="text" required=""></textarea><br />
+      <input type="text" placeholder="username" name="createdBy" required="" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h4>New Reply (POST /api/replies/)</h4>
+    <form action="/api/replies/" method="post" id="newReply">
+      <input type="text" placeholder="thread id" id="thread" name="thread" required="" /><br />
+      <textarea type="text" placeholder="Reply text..." name="text" required=""></textarea><br />
+      <input type="text" placeholder="username" name="createdBy" required="" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
